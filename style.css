@@ -1,0 +1,161 @@
+
+.item-box{
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    margin-bottom: 1px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.margen-body{
+	margin-left: 50px !important; 
+	margin-right: 30px !important;
+	padding-right: 0px !important;
+}
+
+
+.titulo-texto{
+	margin-top: 20px;
+}
+
+.item-menu{
+    width: 50px;
+    text-align: right;
+    float: right;
+    font-size: 1.5em;
+}
+
+.item-menu>.btn{
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.margen{
+	margin-bottom: 20px;
+}
+
+
+.margen-message{
+	margin-left: -15px !important;
+	margin-right: 12px !important;
+}
+
+.item-menu{
+    width: 50px;
+    text-align: right;
+    float: right;
+    font-size: 1.5em;
+}
+
+.margen-descripcion{
+	margin-left: 12px;
+}
+
+.btn-entrada{
+	color: black !important;
+	background-color: #FDFCFC !important;
+	border-color: gray !important;
+	line-height: 1.3;
+	width: 115px;	
+	margin-top: 20px;
+}
+
+.show-grid{
+	background-color: #e4e4e4;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid #bfbfbf;
+	margin-top: 10px;
+    margin-bottom: 3px
+}
+
+.margen-defecto{
+	margin-right: 0px !important;
+    margin-left: 0px !important; 
+}
+
+.margen-head{
+	margin-bottom: 0px !important;
+}
+
+span.limite{
+	word-wrap: break-word;
+    margin-top: 10px;
+    margin-bottom: 10px;	
+}
+
+.ellipsis {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+div.test {
+    white-space: nowrap; 
+    width: 90%; 
+    overflow: hidden; 
+    text-overflow:ellipsis;
+}
+
+
+.btn-save{
+	background-color: white !important;
+	color: black !important;	
+	border-color: black !important;
+}
+
+hr {
+  margin: 0;
+  padding: 0 0 0 10px;
+  width: 97% !important;
+  margin-left: 25px;
+}
+
+.align-item{
+	margin: 10px 0 0 14px;
+}
+
+.item-box-btn{
+	margin: 10px;
+	padding: 10px;
+	background-color: #F3F2F2;
+}
+
+.error-label{
+	color: red;
+}
+.no-margin{
+	margin: 0 !important;
+}
+.no-padding{
+	padding: 0 !important;
+}
+
+.btn-cancelar{
+	color: #fff;
+    background-color: #808080;
+    border-color: #696969;
+}
+
+.btn-cancelar:hover{
+	color: #fff;
+    background-color: #676767;
+}
+
+.modal-header{
+	background-color: whitesmoke;
+	border-radius: 5px 5px 0 0;
+}
+.modal-footer{
+	background-color: whitesmoke;
+	border-radius: 0 0 5px 5px;	
+}
+
+.texto{
+	margin-left: 10px;
+}
+
