@@ -9,7 +9,7 @@
 </head> 
   
 <body class="margen-body">
-    <div ng-controller="Ctrl">
+    <div ng-controller="Ctrl" ng-cloak>
     	<div class="row">
 	    	<h3 class="margen-head">
 	    		{{'write-message.title' | translate }}
@@ -20,21 +20,21 @@
 	    		</button>
     		</h3>
 		</div>
-      <!-- description -->
-      <div class="mostrar-grid margen-descripcion" ng-show="estado"> 		
-		<form name="descripcionForm" ng-submit="saveMessage()">
+      <!-- message -->
+      <div class="show-grid margen-message" ng-show="state"> 		
+		<form name="messageForm" ng-submit="saveMessage()">
 			<div class="row no-margin">
-				<!-- input description --> 
+				<!-- input message -->
 				<div class="col-lg-10 col-md-8 col-sm-5 col-xs-6">
 			  		<input 	type="text"
 			  				class="form-control"
-			  				name="descripcion" 
+			  				name="message" 
 			  				placeholder="{{'markers-position.message' | translate }}"	
-				  			ng-model="descripcion"
+				  			ng-model="message"
 				  			ng-maxlength="200"
 				  			autofocus="true">
 				  	<!-- using angular-message -->
-					<div ng-show="descripcionForm.descripcion.$error.maxlength" class="error-label">
+					<div ng-show="messageForm.message.$error.maxlength" class="error-label">
 						{{'characters-max.message' | translate }}
 					</div>			  			
 			  	</div>			  	
@@ -42,7 +42,7 @@
 			  		<!-- button save -->	  	
 			  		<button type="submit" 
 			  				class="btn btn-success" 
-			  				ng-disabled="!descripcion">
+			  				ng-disabled="!message">
 			  				{{'save-message.button' | translate }}
 			  		</button>	
 			  		<!-- button cancel -->
@@ -56,10 +56,10 @@
 		</form>
       </div> 	  
 
-		<!-- show items description --> 		
+		<!-- show items message --> 		
 		<div class="row col-lg-12 item-box" ng-repeat="item in messageList">
 			<div class="col-sm-11 col-xs-10">
-				<h4 class="ellipsis">{{item.descripcion}}</h4>
+				<h4 class="ellipsis">{{item.message}}</h4>
 			</div>
 
 			<!-- Menu edit delete -->
@@ -77,13 +77,13 @@
 			  		aria-labelledby="dropdownMenu1">
 			    <li>
 			    	<a 	href="#" 
-			    		ng-click="optenerObjectoActualizar(item)">
+			    		ng-click="initUpdated(item)">
 			    		{{'menu.edit' | translate }}
 			    	</a>
 			    </li>
 			    <li>
 			    	<a 	href="#" 
-			    		ng-click="modalConfirmacionDeEliminar(item.descripcion)">
+			    		ng-click="modalShowConfirmDelete(item.message)">
 			    		{{'menu.delete' | translate }}
 			    	</a>
 			    </li>
@@ -92,7 +92,7 @@
 		</div>
 
 	<!-- Modal confirm -->
-		<div id="modalConfirmarEliminacion" class="modal fade" role="dialog"> 
+		<div id="idModalConfirmDelete" class="modal fade" role="dialog"> 
 			<div class="modal-dialog">		
 			    <div class="modal-content">
 			      	<!-- Modal header --> 	
@@ -108,7 +108,7 @@
 				      	<div class="modal-body">	 
 				        	<div class="row margen-item">
 				        		<div class="test texto">
-				        			{{'sure-delete-message.title' | translate }} "{{descripcion}}"?
+				        			{{'sure-delete-message.title' | translate }} "{{message}}"?
 				        		</div>
 				        	</div>				
 				      	</div>
@@ -118,7 +118,7 @@
 					        </button>
 					        <button type="submit" 
 					        		class="btn btn-primary"
-					        		ng-click="eliminarRegistro(item.id)">{{'continue.button' | translate }}
+					        		ng-click="deleteMessage(item.id)">{{'continue.button' | translate }}
 					        </button>
 					      </div>	      			
 		      		</div>  

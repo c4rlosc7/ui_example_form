@@ -1,7 +1,7 @@
 (function () {
-    'use strict'; // use as global $scope 
+    'use strict'; 
 
-    angular.module('edu.mocks.util', [])
+    angular.module('mocks.util', [])
         .factory('utilMockFactory', function ($q) {
 
     	    var methods = {}; 
