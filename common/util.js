@@ -2,10 +2,12 @@ const USE_MOCKS_DATASOURCE = true;
 
 var messageList = [{
     "id": "1",
-    "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, vel fuga. Dolorum natus consequuntur repellendus accusamus, illum sit, saepe eos reprehenderit id rem blanditiis doloremque in iste harum, placeat, omnis."
+    "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, vel fuga. Dolorum natus consequuntur repellendus accusamus, illum sit, saepe eos reprehenderit id rem blanditiis doloremque in iste harum, placeat, omnis.",
+    "date": new Date()
 }, {
     "id": "2",
-    "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate magni perspiciatis nobis voluptates rem quisquam non, itaque, earum animi beatae doloribus consectetur fugit, debitis aut repudiandae nam dignissimos quod. Sit."
+    "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate magni perspiciatis nobis voluptates rem quisquam non, itaque, earum animi beatae doloribus consectetur fugit, debitis aut repudiandae nam dignissimos quod. Sit.",
+    "date": new Date()
 }];
 
 /* encuentra el indice que se va actualiza o eliminar*/

@@ -9,6 +9,20 @@
     padding: 10px;
 }
 
+.box-style{
+    border: 1px solid #261cb9;
+    margin: 20px;
+    border-radius: 4px;
+}
+
+.font-message{
+	font-family:'Lucida Console','Verdana','Monaco',sans-serif;
+}
+
+h4{
+	font-size: 12px;
+}
+
 .margen-body{
 	margin-left: 50px !important; 
 	margin-right: 30px !important;

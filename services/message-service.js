@@ -8,7 +8,8 @@
   	this.getMessageList = function(){
       try{
         if(USE_MOCKS_DATASOURCE){
-              return utilMockFactory.objectToPromise(messageList);
+          console.log(messageList)
+          return utilMockFactory.objectToPromise(messageList);
         } 
       } 
       catch(err){
